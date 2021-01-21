@@ -5,16 +5,15 @@ namespace WooAddToCart\Classes;
 class ProductSettings
 {
 
-    // register Tab
+    /**
+     * Register Tab
+    */ 
     public static function registerProductDataTab($product_data_tabs)
     {
         self::adminEnqueueScripts();
 
         $menuName = esc_html__('Woo Add To Cart Lite', 'wooaddtocart');
-        if (defined('WOOADDTOCART_PRO_INSTALLED')) {
-            $menuName = esc_html__('Woo Add To Cart Pro', 'wooaddtocart');
-        }
-
+        
         $product_data_tabs['_wooaddtocart'] = array(
             'label'  => $menuName,
             'target' => 'wooaddtocart_product_data',
@@ -23,18 +22,9 @@ class ProductSettings
         return $product_data_tabs;
     }
 
-    // admin enqueue script
-    public static function adminEnqueueScripts()
-    {
-        //wp_enqueue_style("admin-wooaddtocart-datepicker", WOOADDTOCART_PLUGIN_DIR_URL . "src/admin/css/admin-wooaddtocart-datepicker.css", false);
-        //wp_enqueue_style("admin-wooaddtocart", WOOADDTOCART_PLUGIN_DIR_URL . "src/admin/css/admin-wooaddtocart.css", false);
-        //wp_enqueue_script("admin-wooaddtocart-datepicker", WOOADDTOCART_PLUGIN_DIR_URL . "src/admin/js/admin-wooaddtocart-datepicker.full.min.js", array('jquery'), WOOADDTOCART_PLUGIN_DIR_VERSION, true);
-        //wp_enqueue_script("admin-wooaddtocart", WOOADDTOCART_PLUGIN_DIR_URL . "src/admin/js/admin-wooaddtocart.js", array('jquery'), WOOADDTOCART_PLUGIN_DIR_VERSION, true);
-    }
-
    
    /**
-    * create Data Fields
+    * Create Data Fields
    */
     public static function createDataFields() 
     {
@@ -65,7 +55,6 @@ class ProductSettings
                                 'desc_tip'    => 'true'
                             )
                         );
-                    
                         // Hide Price
                         woocommerce_wp_checkbox(
                             array(
@@ -91,7 +80,7 @@ class ProductSettings
         }
 
         // Save Remove cart button
-        if (isset($_REQUEST['_wooaddtocart_remove_cart_button'])) {
+        if (isset($_REQUEST['_wooaddtocart_remove_cart_button'])) { 
             update_post_meta($post_id, '_wooaddtocart_remove_cart_button', 'yes');
         } else {
             update_post_meta($post_id, '_wooaddtocart_remove_cart_button', 'no');
@@ -101,8 +90,7 @@ class ProductSettings
         // Cart button text
         if (isset($_REQUEST['_wooaddtocart_cart_button_text'])) {
             update_post_meta($post_id, '_wooaddtocart_cart_button_text', sanitize_text_field($_REQUEST['_wooaddtocart_cart_button_text']));
-        }
-
+        } 
 
         // Save hide price
         if (isset($_REQUEST['_wooaddtocart_hide_price'])) {

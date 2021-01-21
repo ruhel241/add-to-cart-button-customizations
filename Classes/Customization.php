@@ -4,54 +4,84 @@ namespace WooAddToCart\Classes;
 
 class Customization {
 
-    public static function saleBoosterAddSettings($settings) {
-        $settings[] = include_once 'SaleBoosterSettings.php';
+    public static function wooAddToCartAddSettings($settings) {
+        $settings[] = include_once 'WooAddToCartSettings.php';
         return $settings ;
     }
   
     public static function customStyle(){
 
-        if(!defined('SALES_BOOTER_PRO_INSTALLED')) {
-            return '';
-        }
+        wp_enqueue_style("wooaddtocart-css", WOOADDTOCART_PLUGIN_DIR_URL . "src/public/css/woo-add-to-cart.css");
 
-        $topbarPrimaryBgColor   = get_option('sale_booster_settings_primary_bg_color', '#7901ff');
-        $topbarSecondaryBgColor = get_option('sale_booster_settings_secondary_bg_color', '#ff185f');
-        $topbarTextColor        = get_option('sale_booster_settings_topbar_text_color', '#ffffff');
-        $countdownBgColor       = get_option('sale_booster_settings_countdown_bg_color', '#9B4DCA');
-        $countdownTimerColor    = get_option('sale_booster_settings_countdown_timer_color', '#ffffff');
-        $countdownTextColor     = get_option('sale_booster_settings_countdown_text_color', '#9a07d7');
-        $stockColor             = get_option('sale_booster_settings_stock_color', '#ff0400');
-        $bgGradientColor        = $topbarSecondaryBgColor ? 'linear-gradient(to right,'.$topbarPrimaryBgColor.', '.$topbarSecondaryBgColor.')' : $topbarPrimaryBgColor;
+        $bgColor            = get_option('wooaddtocart_button_bg_color', '#7901ff');
+        $textColor          = get_option('wooaddtocart_button_text_color', '#ff185f');
+        $borderColor        = get_option('wooaddtocart_button_border_color', '#ffffff');
+        $hoverColor         = get_option('wooaddtocart_button_hover_color', '#9B4DCA');
+        $borderSize         = get_option('wooaddtocart_button_border_size', '');
+        $borderRadius       = get_option('wooaddtocart_button_radius_size', '');
+        $fontSize           = get_option('wooaddtocart_button_font_size', '');
+        $buttonType         = get_option('wooaddtocart_button_type', 'none');
+        $buttonIcon         = get_option('wooaddtocart_button_icon', '');
+        $buttonIconPosition = get_option('wooaddtocart_button_icon_position', 'none');
         ?>
         <style type='text/css'>
-            <?php if($bgGradientColor || $topbarTextColor) : ?>
-            ._sale-booster-countdown-top {
-                background: <?php echo $bgGradientColor; ?>;
-                color:  <?php echo $topbarTextColor; ?>;
+ 
+            ul.products li.product .button, .single_add_to_cart_button {
+                <?php  echo $bgColor ? ("background: $bgColor;") : '';?>
+                <?php  echo $textColor ? ("color: $textColor;") : '';?>
+                <?php  echo $buttonType ? ("border: $buttonType;") : '';?>
+                <?php  echo $borderColor ? ("border-color: $borderColor;") : '';?>
+                <?php  echo $borderSize ? ("border-width: $borderSize".'px;') : '';?>
+                <?php  echo $borderRadius ? ("border-radius: $borderRadius".'px;') : '';?>
+                <?php  echo $fontSize ? ("font-size: $fontSize".'px;') : ''; ?>
             }
-            <?php endif; ?>
+            
+            ul.products li.product .button:hover, .single_add_to_cart_button:hover {
+               <?php  echo $hoverColor ? ("background: $hoverColor;") : ''; ?>
+               <?php  echo $textColor ? ("color: $textColor;") : ''; ?>
+            }
 
-            <?php if($countdownBgColor || $countdownTimerColor) : ?>
-            ._sale-booster-countdown-bottom ._sale-booster-countdown ._sale-discount-countdown-timer{
-                background: <?php echo $countdownBgColor; ?>;
-                color:  <?php echo $countdownTimerColor; ?>;
-            }
-            <?php endif; ?>
-
-            <?php if($countdownTextColor) : ?>
-            ._sale-booster-countdown-bottom ._sale-booster-hits{
-                color:  <?php echo $countdownTextColor; ?>;
-            }
-            <?php endif; ?>
-
-            <?php if($stockColor) : ?>
-            ._sale-booster-countdown-bottom ._sale-booster-hits .sale_booster_stock{
-                color: <?php echo $stockColor; ?>;
-            }
+            <?php if($buttonIcon): ?>
+                .wooaddtocart-cart-arrow-down:<?php echo $buttonIconPosition;?> {
+                    content: "\61";
+                }
+                .wooaddtocart-cart-plus:<?php echo $buttonIconPosition;?> {
+                    content: "\62";
+                }
+                .wooaddtocart-bag:<?php echo $buttonIconPosition;?> {
+                    content: "\63";
+                }
+                .wooaddtocart-caddie-shop-shopping-streamline:<?php echo $buttonIconPosition;?> {
+                    content: "\64";
+                }
+                .wooaddtocart-caddie-shopping-streamline:<?php echo $buttonIconPosition;?> {
+                    content: "\65";
+                }
+                .wooaddtocart-cart-shopping-1:<?php echo $buttonIconPosition;?> {
+                    content: "\66";
+                }
+                .wooaddtocart-shopping-cart:<?php echo $buttonIconPosition;?> {
+                    content: "\67";
+                }
+                .wooaddtocart-bag-1:<?php echo $buttonIconPosition;?> {
+                    content: "\68";
+                }
+                .wooaddtocart-basket:<?php echo $buttonIconPosition;?> {
+                    content: "\69";
+                }
+                .wooaddtocart-grocery:<?php echo $buttonIconPosition;?> {
+                    content: "\6a";
+                }
             <?php endif; ?>
         </style>
-        <?php
+
+        <?php if($buttonIcon): ?>
+            <script>
+                jQuery(document).ready(function($) {
+                    $('.add_to_cart_button, .single_add_to_cart_button').addClass('<?php echo $buttonIcon; ?>');
+                })
+            </script>
+        <?php endif;
     }
 
 }

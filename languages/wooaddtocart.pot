@@ -1,0 +1,208 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo Add To Cart Customizations\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-21 12:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.4"
+
+#: Classes/WooAddToCartSettings.php:191
+msgid "Add To Cart Button Custom Settings"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:58
+msgid "Add To Cart Button Customization"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:178
+msgid "After"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:158
+msgid "Bag"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:163
+msgid "Bag-1"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:164
+msgid "Basket"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:177
+msgid "Before"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:85 Classes/WooAddToCartSettings.php:87
+msgid "Border Color"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:105 Classes/WooAddToCartSettings.php:107
+msgid "Border Size"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:65 Classes/WooAddToCartSettings.php:67
+msgid "Button Background Color"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:40
+msgid "Button Customization"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:39
+msgid "Button Display"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:148 Classes/WooAddToCartSettings.php:150
+msgid "Button Icon"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:170 Classes/WooAddToCartSettings.php:172
+msgid "Button Icon Position"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:114 Classes/WooAddToCartSettings.php:116
+msgid "Button Radius"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:132 Classes/WooAddToCartSettings.php:134
+msgid "Button Type"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:156
+msgid "Cart Arrow Down"
+msgstr ""
+
+#: Classes/ProductSettings.php:45
+msgid "Cart Button"
+msgstr ""
+
+#: Classes/ProductSettings.php:53
+msgid "Cart Button Text"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:157
+msgid "Cart Plus"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:161
+msgid "Cart Shopping1"
+msgstr ""
+
+#: Classes/ProductSettings.php:63
+msgid "Check me to hide price"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:198
+msgid "Custom Button Display"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:143
+msgid "Dashed"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:142
+msgid "Dotted"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:141
+msgid "Double"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:204
+msgid "Global page"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:165
+msgid "Grocery"
+msgstr ""
+
+#: Classes/ProductSettings.php:62
+msgid "Hide Price"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:95 Classes/WooAddToCartSettings.php:97
+msgid "Hover Color"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/ruhel241"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/ruhel241/woo-add-to-cart-customizations"
+msgstr ""
+
+#. Author of the plugin
+msgid "Md.Ruhel Khan"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:139 Classes/WooAddToCartSettings.php:155
+msgid "None"
+msgstr ""
+
+#: Classes/ProductSettings.php:46
+msgid "Remove"
+msgstr ""
+
+#: Classes/ProductSettings.php:54
+msgid "Replace Cart Button Text"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:205
+msgid "Shop Page"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:159
+msgid "Shop Shopping"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:160
+msgid "Shopping"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:162
+msgid "Shopping Cart"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:206
+msgid "Single page"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:140
+msgid "Solid"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:75 Classes/WooAddToCartSettings.php:77
+msgid "Text Font Color"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:123 Classes/WooAddToCartSettings.php:125
+msgid "Text Font Size"
+msgstr ""
+
+#. Description of the plugin
+msgid "The Best Add To Cart Customizations Plugin for Woocommerce."
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:22
+msgid "Woo Add To Cart Customization"
+msgstr ""
+
+#. Name of the plugin
+msgid "Woo Add To Cart Customizations"
+msgstr ""
+
+#: Classes/ProductSettings.php:15
+msgid "Woo Add To Cart Lite"
+msgstr ""
