@@ -27,18 +27,18 @@ class Customization {
         <style type='text/css'>
  
             ul.products li.product .button, .single_add_to_cart_button {
-                <?php  echo $bgColor ? ("background: $bgColor;") : '';?>
-                <?php  echo $textColor ? ("color: $textColor;") : '';?>
-                <?php  echo $buttonType ? ("border: $buttonType;") : '';?>
-                <?php  echo $borderColor ? ("border-color: $borderColor;") : '';?>
-                <?php  echo $borderSize ? ("border-width: $borderSize".'px;') : '';?>
-                <?php  echo $borderRadius ? ("border-radius: $borderRadius".'px;') : '';?>
-                <?php  echo $fontSize ? ("font-size: $fontSize".'px;') : ''; ?>
+                <?php  echo $bgColor ? ("background: $bgColor !important;") : '';?>
+                <?php  echo $textColor ? ("color: $textColor !important;") : '';?>
+                <?php  echo $buttonType ? ("border: $buttonType !important;") : '';?>
+                <?php  echo $borderColor ? ("border-color: $borderColor !important;") : '';?>
+                <?php  echo $borderSize ? ("border-width: $borderSize".'px !important;') : '';?>
+                <?php  echo $borderRadius ? ("border-radius: $borderRadius".'px !important;') : '';?>
+                <?php  echo $fontSize ? ("font-size: $fontSize".'px !important;') : ''; ?>
             }
             
             ul.products li.product .button:hover, .single_add_to_cart_button:hover {
-               <?php  echo $hoverColor ? ("background: $hoverColor;") : ''; ?>
-               <?php  echo $textColor ? ("color: $textColor;") : ''; ?>
+               <?php  echo $hoverColor ? ("background: $hoverColor !important;") : ''; ?>
+               <?php  echo $textColor ? ("color: $textColor !important;") : ''; ?>
             }
 
             <?php if($buttonIcon): ?>

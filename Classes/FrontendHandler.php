@@ -12,10 +12,13 @@ class FrontendHandler
     {
         $productId = get_the_ID();
         $remove_cart_button = get_post_meta($productId, '_wooaddtocart_remove_cart_button', true);
- 
-       if ($remove_cart_button == 'yes' ) {
-            if (is_product()) {
-                remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+        $buttonDisplay = get_option('wooaddtocart_button_display');
+
+        if($buttonDisplay == 'single_page' || $buttonDisplay == 'global_page') {
+            if ($remove_cart_button == 'yes') {
+                if (is_product()) {
+                    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+                }
             }
         }
     }
@@ -29,9 +32,12 @@ class FrontendHandler
         if (is_shop() || is_product_category()) {
             $productId = $product->id;
             $remove_cart_button = get_post_meta($productId, '_wooaddtocart_remove_cart_button', true);
-            
-            if ($remove_cart_button == 'yes') {
-                $button = "";
+            $buttonDisplay = get_option('wooaddtocart_button_display');
+               
+            if($buttonDisplay == 'shop_page' || $buttonDisplay == 'global_page') {
+                if ($remove_cart_button == 'yes') {
+                    $button = "";
+                }
             }
         }
         return $button;

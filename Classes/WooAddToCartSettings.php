@@ -57,7 +57,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 				array(
 					'name'     => __( 'Add To Cart Button Customization', 'wooaddtocart' ),
 					'type'     => 'title',
-					'desc'     => 'You can change "Add To Cart" Button background, Button color, Button font size etc',
+					'desc'     => 'You can customize "Add To Cart" Button background, Button color, Button font size etc',
 					'id'       => 'wooaddtocart_settings_title'
 				),
 				
@@ -188,18 +188,17 @@ class WooAddToCartSettings extends WC_Settings_Page {
 			$settings = apply_filters('wooaddtocart_home_ad_settings_data', array(
 			
 				array(
-                    'name'     => __( 'Add To Cart Button Custom Settings', 'wooaddtocart' ),
-                    'type'     => 'title',
-                    'desc'     => '',
+					'name'     => __( 'Add To Cart Button Custom Settings', 'wooaddtocart' ),
+					'desc'     => 'If the "Add To Cart" Button is hidden in the single product then it\'s working.',
+					'type'     => 'title',
                     'id'       => 'wooaddtocart_settings_title'
                 ),
 				
 				array(
-                    'title'    => __( 'Custom Button Display', 'wooaddtocart' ),
-                    'id'       => 'home_corner_ad_position',
+                    'title'    => __( 'Button Hide', 'wooaddtocart' ),
+                    'id'       => 'wooaddtocart_button_display',
                     'default'  => 'no',
                     'type'     => 'radio',
-                    'class' => '_wooaddtocart_corner_ad_position',
                     'options'  => array(
 						'global_page'  => __( 'Global page', 'wooaddtocart' ),
                         'shop_page'    => __( 'Shop Page', 'wooaddtocart' ),
