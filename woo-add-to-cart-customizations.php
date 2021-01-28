@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Woo Add To Cart Customizations
+Plugin Name: Woo Add To Cart Button Customizations
 Description: The Best Add To Cart Customizations Plugin for Woocommerce.
 Version: 1.0.0
 Author: Md.Ruhel Khan
