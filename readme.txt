@@ -36,8 +36,17 @@ Admin can change add to cart button text change.
 This section describes how to install the plugin and get it working.
 e.g.
 
+Install From WordPress Admin Panel:
+1. Login to your WordPress Admin Area
+2. Go to Plugins -> Add New
+3. Search for “WooCommerce Add To Cart Button Customization”
+3. Find this plugin Click “install now”
+4. Activate The Plugin
+
+*Manual Installation*
 1. Upload the plugin files to the /wp-content/plugins/ directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the ‘Plugins’ screen in WordPress
+2. Activate the plugin through the ‘Plugins’ screen in WordPress
+
 
 == Frequently Asked Questions ==
 
