@@ -28,26 +28,26 @@ class ProductSettings
     {
         ?>
             <div id="wooaddtocart_product_data" class="panel woocommerce_options_panel">
-                <input type="hidden" name="_wooaddtocart_have_values" value="1"/>
+                <input type="hidden" name="_wooaddtocart_product_have_values" value="1"/>
                 <div class="options_group">
                         <?php
                         // hidden input
                         woocommerce_wp_hidden_input([
-                            'id'    => '_wooaddtocart_have_values',
+                            'id'    => '_wooaddtocart_product_have_values',
                             'value' => 1
                         ]);
                         
                         woocommerce_wp_checkbox(
                             array(
-                                'id'          => '_wooaddtocart_remove_cart_button',
+                                'id'          => '_wooaddtocart_product_hide_cart_button',
                                 'label'       => __('Cart Button', 'wooaddtocart'),
-                                'description' => __('Remove', 'wooaddtocart')
+                                'description' => __('Button hide', 'wooaddtocart')
                             )
                         );
                         //cart button text replace
                         woocommerce_wp_text_input(
                             array(
-                                'id'          => '_wooaddtocart_cart_button_text',
+                                'id'          => '_wooaddtocart_product_cart_button_text',
                                 'label'       => __('Cart Button Text', 'wooaddtocart'),
                                 'description' => __('Replace Cart Button Text', 'wooaddtocart'),
                                 'desc_tip'    => 'true'
@@ -56,7 +56,7 @@ class ProductSettings
                         // Hide Price
                         woocommerce_wp_checkbox(
                             array(
-                                'id'          => '_wooaddtocart_hide_price',
+                                'id'          => '_wooaddtocart_product_hide_price',
                                 'label'       => __('Hide Price', 'wooaddtocart'),
                                 'description' => __('Check me to hide price', 'wooaddtocart')
                             )
@@ -73,28 +73,28 @@ class ProductSettings
     */ 
     public static function saveDataFields($post_id)
     {
-        if (!isset($_REQUEST['_wooaddtocart_have_values'])) {
+        if (!isset($_REQUEST['_wooaddtocart_product_have_values'])) {
             return;
         }
 
         // Save Remove cart button
-        if (isset($_REQUEST['_wooaddtocart_remove_cart_button'])) { 
-            update_post_meta($post_id, '_wooaddtocart_remove_cart_button', 'yes');
+        if (isset($_REQUEST['_wooaddtocart_product_hide_cart_button'])) { 
+            update_post_meta($post_id, '_wooaddtocart_product_hide_cart_button', 'yes');
         } else {
-            update_post_meta($post_id, '_wooaddtocart_remove_cart_button', 'no');
+            update_post_meta($post_id, '_wooaddtocart_product_hide_cart_button', 'no');
         }
 
        
         // Cart button text
-        if (isset($_REQUEST['_wooaddtocart_cart_button_text'])) {
-            update_post_meta($post_id, '_wooaddtocart_cart_button_text', sanitize_text_field($_REQUEST['_wooaddtocart_cart_button_text']));
+        if (isset($_REQUEST['_wooaddtocart_product_cart_button_text'])) {
+            update_post_meta($post_id, '_wooaddtocart_product_cart_button_text', sanitize_text_field($_REQUEST['_wooaddtocart_product_cart_button_text']));
         } 
 
         // Save hide price
-        if (isset($_REQUEST['_wooaddtocart_hide_price'])) {
-            update_post_meta($post_id, '_wooaddtocart_hide_price', 'yes');
+        if (isset($_REQUEST['_wooaddtocart_product_hide_price'])) {
+            update_post_meta($post_id, '_wooaddtocart_product_hide_price', 'yes');
         } else {
-            update_post_meta($post_id, '_wooaddtocart_hide_price', 'no');
+            update_post_meta($post_id, '_wooaddtocart_product_hide_price', 'no');
         }
 
     }

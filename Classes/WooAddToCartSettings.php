@@ -36,7 +36,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 	public function get_sections() {
 		
 		$sections = array(
-			'' => __( 'Button Display', 'wooaddtocart' ),
+			'' => __( 'Button Hide Settings', 'wooaddtocart' ),
 			'button_customization'   => __( 'Button Customization', 'wooaddtocart')
 		);
 		
@@ -66,9 +66,9 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'color',
 					'desc'     => __( 'Button Background Color', 'wooaddtocart' ),
 					'desc_tip' => true,
-					'id'       => '_wooaddtocart_button_bg_color',
+					'id'       => '_wooaddtocart_settings_button_bg_color',
 					'css'      => 'width:80px;',
-					'default'  => '#7901ff',
+					'default'  => '#735dee',
 				),
 	
 				array(
@@ -76,9 +76,9 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'color',
 					'desc'     => __( 'Text Font Color', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_text_color',
+					'id'	   => '_wooaddtocart_settings_button_text_color',
 					'css'      => 'width:80px',
-					'default'  => '#ff185f',
+					'default'  => '#ffffff',
 				),
 
 				array(
@@ -86,9 +86,9 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'color',
 					'desc'     => __( 'Border Color', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_border_color',
+					'id'	   => '_wooaddtocart_settings_button_border_color',
 					'css'      => 'width:80px',
-					'default'  => '#ffffff',
+					'default'  => '#cfc6f5',
 				),
 
 				array(
@@ -96,9 +96,9 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'color',
 					'desc'     => __( 'Hover Color', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_hover_color',
+					'id'	   => '_wooaddtocart_settings_button_hover_color',
 					'css'      => 'width:80px',
-					'default'  => '#9B4DCA',
+					'default'  => '#4c4747',
 				),
 
 				array(
@@ -106,7 +106,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'number',
 					'desc'     => __( 'Border Size', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_border_size',
+					'id'	   => '_wooaddtocart_settings_button_border_size',
 					'css'      => 'width:200px',
 				),
 
@@ -115,7 +115,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'number',
 					'desc'     => __( 'Button Radius', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_radius_size',
+					'id'	   => '_wooaddtocart_settings_button_radius_size',
 					'css'      => 'width:200px',
 				),
 
@@ -124,7 +124,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'number',
 					'desc'     => __( 'Text Font Size', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_font_size',
+					'id'	   => '_wooaddtocart_settings_button_font_size',
 					'css'      => 'width:200px',
 				),
 				
@@ -133,7 +133,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'select',
 					'desc'     => __( 'Button Type', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_type',
+					'id'	   => '_wooaddtocart_settings_button_type',
 					'css'      => 'width:200px',
 					'options'  => array(
 						''   	 => __( 'None', 'wooaddtocart' ),
@@ -149,8 +149,9 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'select',
 					'desc'     => __( 'Button Icon', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_icon',
+					'id'	   => '_wooaddtocart_settings_button_icon',
 					'css'      => 'width:200px',
+					'default'  => 'wooaddtocart-shopping-cart',
 					'options'  => array(
 						''  => __( 'None', 'wooaddtocart' ),
 						'wooaddtocart-cart-arrow-down'  => __( 'Cart Arrow Down', 'wooaddtocart' ),
@@ -171,7 +172,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 					'type'     => 'select',
 					'desc'     => __( 'Button Icon Position', 'wooaddtocart'),
 					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_button_icon_position',
+					'id'	   => '_wooaddtocart_settings_button_icon_position',
 					'css'      => 'width:200px',
 					'options'  => array(
 						'before'=> __( 'Before', 'wooaddtocart' ),
@@ -196,8 +197,8 @@ class WooAddToCartSettings extends WC_Settings_Page {
 				
 				array(
                     'title'    => __( 'Button Hide', 'wooaddtocart' ),
-                    'id'       => '_wooaddtocart_button_display',
-                    'default'  => 'no',
+                    'id'       => '_wooaddtocart_settings_button_hide',
+                    'default'  => 'global_page',
                     'type'     => 'radio',
                     'options'  => array(
 						'global_page'  => __( 'Global page', 'wooaddtocart' ),

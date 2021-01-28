@@ -11,8 +11,8 @@ class FrontendHandler
     public static function removeSingleCartButton()
     {
         $productId = get_the_ID();
-        $remove_cart_button = get_post_meta($productId, '_wooaddtocart_remove_cart_button', true);
-        $buttonDisplay = get_option('wooaddtocart_button_display');
+        $remove_cart_button = get_post_meta($productId, '_wooaddtocart_product_hide_cart_button', true);
+        $buttonDisplay = get_option('_wooaddtocart_settings_button_hide');
 
         if($buttonDisplay == 'single_page' || $buttonDisplay == 'global_page') {
             if ($remove_cart_button == 'yes') {
@@ -31,8 +31,8 @@ class FrontendHandler
     {   
         if (is_shop() || is_product_category()) {
             $productId = $product->id;
-            $remove_cart_button = get_post_meta($productId, '_wooaddtocart_remove_cart_button', true);
-            $buttonDisplay = get_option('wooaddtocart_button_display');
+            $remove_cart_button = get_post_meta($productId, '_wooaddtocart_product_hide_cart_button', true);
+            $buttonDisplay = get_option('_wooaddtocart_settings_button_hide');
                
             if($buttonDisplay == 'shop_page' || $buttonDisplay == 'global_page') {
                 if ($remove_cart_button == 'yes') {
@@ -50,7 +50,7 @@ class FrontendHandler
         if ( is_shop() || is_product_category() ) {
             global $product;
             $productId = $product->id;
-            $customText = get_post_meta($productId, '_wooaddtocart_cart_button_text', true);
+            $customText = get_post_meta($productId, '_wooaddtocart_product_cart_button_text', true);
             if($customText){
                 $text = $customText;
                 return $text;
@@ -69,7 +69,7 @@ class FrontendHandler
             return;
         }
         $productId = $product->id;
-        $customText = get_post_meta($productId, '_wooaddtocart_cart_button_text', true);
+        $customText = get_post_meta($productId, '_wooaddtocart_product_cart_button_text', true);
         if($customText){
             $text = $customText;
             return $text;
@@ -83,7 +83,7 @@ class FrontendHandler
     public static function hideSinglePrice()
     {
         $productId = get_the_ID();
-        $hidePrice = get_post_meta($productId, '_wooaddtocart_hide_price', true);
+        $hidePrice = get_post_meta($productId, '_wooaddtocart_product_hide_price', true);
         if ($hidePrice == "yes") {
             remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
         }
@@ -95,7 +95,7 @@ class FrontendHandler
     {
         $productId = $product->id;
         if (is_shop() || is_product_category()) {
-            $hidePrice = get_post_meta($productId, '_wooaddtocart_hide_price', true);
+            $hidePrice = get_post_meta($productId, '_wooaddtocart_product_hide_price', true);
             if ($hidePrice == 'yes') {
                 return '';
             }

@@ -1,2 +1,2 @@
-# WooCommerce Add To Cart text change, Button link, Button Customizations.
-WooCommerce Add To Cart Button text change, Button Customization, Add Button Link.
+# WooCommerce Add To Cart text change, Button Customizations. Button Hide, Price Hide.
+WooCommerce Add to cart button customization for woocommerce, button color, button font size, button radius And added button icon etc.  Hide add to cart button on single product, woocommerce price hide on single product, Add to cart button text change in single product and global settings add to cart Button hide on shop page, single page or Global page. Add Icon on add to cart button.
