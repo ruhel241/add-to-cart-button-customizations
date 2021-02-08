@@ -19,7 +19,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
 	public function __construct() {
 	
 		$this->id    = 'wooaddtocart';
-		$this->label = __( 'Woo Add To Cart Customization', 'wooaddtocart' );
+		$this->label = __( 'Add To Cart Customization Settings', 'wooaddtocart' );
 		
 		add_filter( 'woocommerce_settings_tabs_array',        array( $this, 'add_settings_page' ), 20 );
 		add_action( 'woocommerce_settings_' . $this->id,      array( $this, 'output' ) );

@@ -13,16 +13,16 @@ class Customization {
 
         wp_enqueue_style("wooaddtocart-css", WOOADDTOCART_PLUGIN_DIR_URL . "src/public/css/woo-add-to-cart.css");
 
-        $bgColor            = get_option('_wooaddtocart_settings_button_bg_color', '#7901ff');
-        $textColor          = get_option('_wooaddtocart_settings_button_text_color', '#ff185f');
-        $borderColor        = get_option('_wooaddtocart_settings_button_border_color', '#ffffff');
-        $hoverColor         = get_option('_wooaddtocart_settings_button_hover_color', '#9B4DCA');
+        $bgColor            = get_option('_wooaddtocart_settings_button_bg_color', '#735dee');
+        $textColor          = get_option('_wooaddtocart_settings_button_text_color', '#ffffff');
+        $borderColor        = get_option('_wooaddtocart_settings_button_border_color', '#cfc6f5');
+        $hoverColor         = get_option('_wooaddtocart_settings_button_hover_color', '#4c4747');
         $borderSize         = get_option('_wooaddtocart_settings_button_border_size', '');
         $borderRadius       = get_option('_wooaddtocart_settings_button_radius_size', '');
         $fontSize           = get_option('_wooaddtocart_settings_button_font_size', '');
         $buttonType         = get_option('_wooaddtocart_settings_button_type', 'none');
         $buttonIcon         = get_option('_wooaddtocart_settings_button_icon', '');
-        $buttonIconPosition = get_option('_wooaddtocart_settings_button_icon_position', 'none');
+        $buttonIconPosition = get_option('_wooaddtocart_settings_button_icon_position', 'before');
         ?>
         <style type='text/css'>
  

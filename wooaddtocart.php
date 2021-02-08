@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Woo Add To Cart Button Customizations
+Plugin Name: Add To Cart Button Customizations
 Description: The Best Add To Cart Customizations Plugin for Woocommerce.
 Version: 1.0.0
 Author: Md.Ruhel Khan
 Author URI: https://github.com/ruhel241
-Plugin URI: https://github.com/ruhel241/woo-add-to-cart-customizations
+Plugin URI: https://github.com/ruhel241/add-to-cart-customizations
 License: GPLv2 or later
 Text Domain: wooaddtocart
 Domain Path: /languages

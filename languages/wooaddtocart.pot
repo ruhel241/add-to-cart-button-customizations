@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Woo Add To Cart Customizations\n"
+"Project-Id-Version: Add To Cart Button Customizations\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-21 12:02+0000\n"
+"POT-Creation-Date: 2021-01-29 09:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.3.0; wp-5.4"
 
-#: Classes/WooAddToCartSettings.php:191
+#: Classes/WooAddToCartSettings.php:192
 msgid "Add To Cart Button Custom Settings"
 msgstr ""
 
@@ -23,23 +23,35 @@ msgstr ""
 msgid "Add To Cart Button Customization"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:178
+#. Name of the plugin
+msgid "Add To Cart Button Customizations"
+msgstr ""
+
+#: Classes/ProductSettings.php:13
+msgid "Add To Cart Customization Lite"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:22
+msgid "Add To Cart Customization Settings"
+msgstr ""
+
+#: Classes/WooAddToCartSettings.php:179
 msgid "After"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:158
+#: Classes/WooAddToCartSettings.php:159
 msgid "Bag"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:163
+#: Classes/WooAddToCartSettings.php:164
 msgid "Bag-1"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:164
+#: Classes/WooAddToCartSettings.php:165
 msgid "Basket"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:177
+#: Classes/WooAddToCartSettings.php:178
 msgid "Before"
 msgstr ""
 
@@ -59,15 +71,23 @@ msgstr ""
 msgid "Button Customization"
 msgstr ""
 
+#: Classes/WooAddToCartSettings.php:199
+msgid "Button Hide"
+msgstr ""
+
+#: Classes/ProductSettings.php:44
+msgid "Button hide"
+msgstr ""
+
 #: Classes/WooAddToCartSettings.php:39
-msgid "Button Display"
+msgid "Button Hide Settings"
 msgstr ""
 
 #: Classes/WooAddToCartSettings.php:148 Classes/WooAddToCartSettings.php:150
 msgid "Button Icon"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:170 Classes/WooAddToCartSettings.php:172
+#: Classes/WooAddToCartSettings.php:171 Classes/WooAddToCartSettings.php:173
 msgid "Button Icon Position"
 msgstr ""
 
@@ -79,32 +99,28 @@ msgstr ""
 msgid "Button Type"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:156
+#: Classes/WooAddToCartSettings.php:157
 msgid "Cart Arrow Down"
 msgstr ""
 
-#: Classes/ProductSettings.php:45
+#: Classes/ProductSettings.php:43
 msgid "Cart Button"
 msgstr ""
 
-#: Classes/ProductSettings.php:53
+#: Classes/ProductSettings.php:51
 msgid "Cart Button Text"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:157
+#: Classes/WooAddToCartSettings.php:158
 msgid "Cart Plus"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:161
+#: Classes/WooAddToCartSettings.php:162
 msgid "Cart Shopping1"
 msgstr ""
 
-#: Classes/ProductSettings.php:63
+#: Classes/ProductSettings.php:61
 msgid "Check me to hide price"
-msgstr ""
-
-#: Classes/WooAddToCartSettings.php:198
-msgid "Custom Button Display"
 msgstr ""
 
 #: Classes/WooAddToCartSettings.php:143
@@ -123,11 +139,11 @@ msgstr ""
 msgid "Global page"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:165
+#: Classes/WooAddToCartSettings.php:166
 msgid "Grocery"
 msgstr ""
 
-#: Classes/ProductSettings.php:62
+#: Classes/ProductSettings.php:60
 msgid "Hide Price"
 msgstr ""
 
@@ -140,22 +156,18 @@ msgid "https://github.com/ruhel241"
 msgstr ""
 
 #. URI of the plugin
-msgid "https://github.com/ruhel241/woo-add-to-cart-customizations"
+msgid "https://github.com/ruhel241/add-to-cart-customizations"
 msgstr ""
 
 #. Author of the plugin
 msgid "Md.Ruhel Khan"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:139 Classes/WooAddToCartSettings.php:155
+#: Classes/WooAddToCartSettings.php:139 Classes/WooAddToCartSettings.php:156
 msgid "None"
 msgstr ""
 
-#: Classes/ProductSettings.php:46
-msgid "Remove"
-msgstr ""
-
-#: Classes/ProductSettings.php:54
+#: Classes/ProductSettings.php:52
 msgid "Replace Cart Button Text"
 msgstr ""
 
@@ -163,15 +175,15 @@ msgstr ""
 msgid "Shop Page"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:159
+#: Classes/WooAddToCartSettings.php:160
 msgid "Shop Shopping"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:160
+#: Classes/WooAddToCartSettings.php:161
 msgid "Shopping"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:162
+#: Classes/WooAddToCartSettings.php:163
 msgid "Shopping Cart"
 msgstr ""
 
@@ -193,16 +205,4 @@ msgstr ""
 
 #. Description of the plugin
 msgid "The Best Add To Cart Customizations Plugin for Woocommerce."
-msgstr ""
-
-#: Classes/WooAddToCartSettings.php:22
-msgid "Woo Add To Cart Customization"
-msgstr ""
-
-#. Name of the plugin
-msgid "Woo Add To Cart Customizations"
-msgstr ""
-
-#: Classes/ProductSettings.php:15
-msgid "Woo Add To Cart Lite"
 msgstr ""
