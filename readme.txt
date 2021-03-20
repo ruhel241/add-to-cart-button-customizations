@@ -1,9 +1,9 @@
 === Add To Cart Button Customizations ===
 Contributors: ruhel241
-Tags:  Hide add to cart button woocommerce, Add to cart button text change in single product, woocommerce hide price, Add to cart button customization, Add to cart Button hide on shop page, single page or Global page.
+Tags: hide add to cart button, woocommerce hide price, add to cart button custom text, woocommerce, add to cart.
 Requires at least: 4.5
 Requires PHP: 5.4 or greater
-Tested up to: 5.6.2
+Tested up to: 5.7
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
