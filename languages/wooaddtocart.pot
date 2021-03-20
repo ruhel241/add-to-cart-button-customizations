@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Add To Cart Button Customizations\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-29 09:58+0000\n"
+"POT-Creation-Date: 2021-03-19 13:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,13 +13,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.3.0; wp-5.4"
+"X-Loco-Version: 2.5.0; wp-5.6.2\n"
+"X-Domain: wooaddtocart"
 
-#: Classes/WooAddToCartSettings.php:192
+#: Classes/WooAddToCartSettings.php:195
 msgid "Add To Cart Button Custom Settings"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:58
+#: Classes/WooAddToCartSettings.php:61
 msgid "Add To Cart Button Customization"
 msgstr ""
 
@@ -27,51 +28,51 @@ msgstr ""
 msgid "Add To Cart Button Customizations"
 msgstr ""
 
-#: Classes/ProductSettings.php:13
+#: Classes/ProductSettings.php:12
 msgid "Add To Cart Customization Lite"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:22
+#: Classes/WooAddToCartSettings.php:23
 msgid "Add To Cart Customization Settings"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:179
+#: Classes/WooAddToCartSettings.php:182
 msgid "After"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:159
+#: Classes/WooAddToCartSettings.php:162
 msgid "Bag"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:164
+#: Classes/WooAddToCartSettings.php:167
 msgid "Bag-1"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:165
+#: Classes/WooAddToCartSettings.php:168
 msgid "Basket"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:178
+#: Classes/WooAddToCartSettings.php:181
 msgid "Before"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:85 Classes/WooAddToCartSettings.php:87
+#: Classes/WooAddToCartSettings.php:88 Classes/WooAddToCartSettings.php:90
 msgid "Border Color"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:105 Classes/WooAddToCartSettings.php:107
+#: Classes/WooAddToCartSettings.php:108 Classes/WooAddToCartSettings.php:110
 msgid "Border Size"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:65 Classes/WooAddToCartSettings.php:67
+#: Classes/WooAddToCartSettings.php:68 Classes/WooAddToCartSettings.php:70
 msgid "Button Background Color"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:40
+#: Classes/WooAddToCartSettings.php:41
 msgid "Button Customization"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:199
+#: Classes/WooAddToCartSettings.php:202
 msgid "Button Hide"
 msgstr ""
 
@@ -79,27 +80,27 @@ msgstr ""
 msgid "Button hide"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:39
+#: Classes/WooAddToCartSettings.php:40
 msgid "Button Hide Settings"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:148 Classes/WooAddToCartSettings.php:150
+#: Classes/WooAddToCartSettings.php:151 Classes/WooAddToCartSettings.php:153
 msgid "Button Icon"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:171 Classes/WooAddToCartSettings.php:173
+#: Classes/WooAddToCartSettings.php:174 Classes/WooAddToCartSettings.php:176
 msgid "Button Icon Position"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:114 Classes/WooAddToCartSettings.php:116
+#: Classes/WooAddToCartSettings.php:117 Classes/WooAddToCartSettings.php:119
 msgid "Button Radius"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:132 Classes/WooAddToCartSettings.php:134
+#: Classes/WooAddToCartSettings.php:135 Classes/WooAddToCartSettings.php:137
 msgid "Button Type"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:157
+#: Classes/WooAddToCartSettings.php:160
 msgid "Cart Arrow Down"
 msgstr ""
 
@@ -111,11 +112,11 @@ msgstr ""
 msgid "Cart Button Text"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:158
+#: Classes/WooAddToCartSettings.php:161
 msgid "Cart Plus"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:162
+#: Classes/WooAddToCartSettings.php:165
 msgid "Cart Shopping1"
 msgstr ""
 
@@ -123,23 +124,23 @@ msgstr ""
 msgid "Check me to hide price"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:143
+#: Classes/WooAddToCartSettings.php:146
 msgid "Dashed"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:142
+#: Classes/WooAddToCartSettings.php:145
 msgid "Dotted"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:141
+#: Classes/WooAddToCartSettings.php:144
 msgid "Double"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:204
+#: Classes/WooAddToCartSettings.php:207
 msgid "Global page"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:166
+#: Classes/WooAddToCartSettings.php:169
 msgid "Grocery"
 msgstr ""
 
@@ -147,7 +148,7 @@ msgstr ""
 msgid "Hide Price"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:95 Classes/WooAddToCartSettings.php:97
+#: Classes/WooAddToCartSettings.php:98 Classes/WooAddToCartSettings.php:100
 msgid "Hover Color"
 msgstr ""
 
@@ -163,7 +164,7 @@ msgstr ""
 msgid "Md.Ruhel Khan"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:139 Classes/WooAddToCartSettings.php:156
+#: Classes/WooAddToCartSettings.php:142 Classes/WooAddToCartSettings.php:159
 msgid "None"
 msgstr ""
 
@@ -171,35 +172,35 @@ msgstr ""
 msgid "Replace Cart Button Text"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:205
+#: Classes/WooAddToCartSettings.php:208
 msgid "Shop Page"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:160
+#: Classes/WooAddToCartSettings.php:163
 msgid "Shop Shopping"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:161
+#: Classes/WooAddToCartSettings.php:164
 msgid "Shopping"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:163
+#: Classes/WooAddToCartSettings.php:166
 msgid "Shopping Cart"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:206
+#: Classes/WooAddToCartSettings.php:209
 msgid "Single page"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:140
+#: Classes/WooAddToCartSettings.php:143
 msgid "Solid"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:75 Classes/WooAddToCartSettings.php:77
+#: Classes/WooAddToCartSettings.php:78 Classes/WooAddToCartSettings.php:80
 msgid "Text Font Color"
 msgstr ""
 
-#: Classes/WooAddToCartSettings.php:123 Classes/WooAddToCartSettings.php:125
+#: Classes/WooAddToCartSettings.php:126 Classes/WooAddToCartSettings.php:128
 msgid "Text Font Size"
 msgstr ""
 

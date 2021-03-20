@@ -7,7 +7,8 @@ if ( ! class_exists( 'WooAddToCartSettings' ) ) :
 	 *
 	 * @since 1.0.0
 	 */
-class WooAddToCartSettings extends WC_Settings_Page {
+class WooAddToCartSettings extends WC_Settings_Page
+{
 	
 	/**
 	 * Setup settings class
@@ -16,8 +17,8 @@ class WooAddToCartSettings extends WC_Settings_Page {
 	 */
 
 	
-	public function __construct() {
-	
+	public function __construct() 
+	{
 		$this->id    = 'wooaddtocart';
 		$this->label = __( 'Add To Cart Customization Settings', 'wooaddtocart' );
 		
@@ -33,8 +34,8 @@ class WooAddToCartSettings extends WC_Settings_Page {
 	 *
 	 * @return array
 	 */
-	public function get_sections() {
-		
+	public function get_sections() 
+	{
 		$sections = array(
 			'' => __( 'Button Hide Settings', 'wooaddtocart' ),
 			'button_customization'   => __( 'Button Customization', 'wooaddtocart')
@@ -50,8 +51,10 @@ class WooAddToCartSettings extends WC_Settings_Page {
 	 * @param string $current_section Optional. Defaults to empty string.
 	 * @return array Array of settings
 	 */
-	public function get_settings( $current_section = '' ) {
+	public function get_settings( $current_section = '' ) 
+	{
 		if ( 'button_customization' == $current_section ) {
+
 			$settings = apply_filters('wooaddtocart_cart_button_customization_data', array(
 			
 				array(
@@ -213,6 +216,7 @@ class WooAddToCartSettings extends WC_Settings_Page {
                 )
 			) );
 		}
+
 		return apply_filters( 'woocommerce_get_settings_' . $this->id, $settings, $current_section );
 	}
 	
@@ -222,8 +226,8 @@ class WooAddToCartSettings extends WC_Settings_Page {
 	 *
 	 * @since 1.0
 	 */
-	public function output() {
-	
+	public function output() 
+	{
 		global $current_section;
 		
 		$settings = $this->get_settings( $current_section );
@@ -236,8 +240,8 @@ class WooAddToCartSettings extends WC_Settings_Page {
 		*
 		* @since 1.0
 		*/
-	public function save() {
-	
+	public function save()
+	{
 		global $current_section;
 		
 		$settings = $this->get_settings( $current_section );

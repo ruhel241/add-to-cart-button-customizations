@@ -2,15 +2,17 @@
 
 namespace WooAddToCart\Classes;
 
-class Customization {
+class Customization 
+{
 
-    public static function wooAddToCartAddSettings($settings) {
+    public static function wooAddToCartAddSettings($settings)
+    {
         $settings[] = include_once 'WooAddToCartSettings.php';
         return $settings ;
     }
   
-    public static function customStyle(){
-
+    public static function customStyle()
+    {
         wp_enqueue_style("wooaddtocart-css", WOOADDTOCART_PLUGIN_DIR_URL . "src/public/css/woo-add-to-cart.css");
 
         $bgColor            = get_option('_wooaddtocart_settings_button_bg_color', '#735dee');
@@ -75,7 +77,7 @@ class Customization {
             <?php endif; ?>
         </style>
 
-        <?php if($buttonIcon): ?>
+        <?php if ($buttonIcon): ?>
             <script>
                 jQuery(document).ready(function($) {
                     $('.add_to_cart_button, .single_add_to_cart_button').addClass('<?php echo $buttonIcon; ?>');

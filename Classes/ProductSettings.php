@@ -4,7 +4,6 @@ namespace WooAddToCart\Classes;
 
 class ProductSettings
 {
-
     /**
      * Register Tab
     */ 
@@ -17,6 +16,7 @@ class ProductSettings
             'target' => 'wooaddtocart_product_data',
             'class'  => array('show_if_wooaddtocart_product_data'),
         );
+
         return $product_data_tabs;
     }
 
@@ -98,6 +98,6 @@ class ProductSettings
         }
 
     }
-
+    
 }
 

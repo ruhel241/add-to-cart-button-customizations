@@ -1,10 +1,10 @@
-=== Add To Cart Button Customization For WooCommerce ===
+=== Add To Cart Button Customizations ===
 Contributors: ruhel241
 Tags:  Hide add to cart button woocommerce, Add to cart button text change in single product, woocommerce hide price, Add to cart button customization, Add to cart Button hide on shop page, single page or Global page.
 Requires at least: 4.5
 Requires PHP: 5.4 or greater
-Tested up to: 5.3.0
-Stable tag: 1.6.0
+Tested up to: 5.6.2
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,5 +105,3 @@ Yes, you can set icon position left or right.
 * Init First version
 
 == Upgrade Notice ==
-
-Tested: 5.5
