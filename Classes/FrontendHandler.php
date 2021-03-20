@@ -11,7 +11,7 @@ class FrontendHandler
     {
         $productId = get_the_ID();
         $remove_cart_button = get_post_meta($productId, '_wooaddtocart_product_hide_cart_button', true);
-        $buttonHide = get_option('_wooaddtocart_settings_button_hide');
+        $buttonHide = get_option('_wooaddtocart_settings_button_hide', 'global_page');
 
         if ($buttonHide == 'single_page' || $buttonHide == 'global_page') {
             if ($remove_cart_button == 'yes') {
@@ -32,7 +32,7 @@ class FrontendHandler
             
             $productId = get_the_ID();
             $remove_cart_button = get_post_meta($productId, '_wooaddtocart_product_hide_cart_button', true);
-            $buttonHide = get_option('_wooaddtocart_settings_button_hide');
+            $buttonHide = get_option('_wooaddtocart_settings_button_hide', 'global_page');
                
             if ($buttonHide == 'shop_page' || $buttonHide == 'global_page') {
                 if ($remove_cart_button == 'yes') {

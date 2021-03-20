@@ -88,12 +88,12 @@ Yes, you can set icon position left or right.
 
 1. Add to cart Button background color.
 2. Button Hover color.
-3. Added Icon "Add to cart" button.
-4. Icon Left side
-5. Icon Right side
-6. Button border width & radius
-7. Hide "Add to cart" button on Shop Products
-8. Hide "Add to cart" button on Single Product.
+3. Added Icon "Add to cart" button & Icon Left side.
+4. Icon Right side
+5. Button border width & radius
+6. Hide "Add to cart" button on Shop Products
+7. Hide "Add to cart" button on Single Product.
+8. Hide Price & Hide Button.
 9. Button Hide Settings
 10. Add to cart button color customization
 
