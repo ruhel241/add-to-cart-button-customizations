@@ -23,7 +23,7 @@ class Customization
         $borderRadius       = get_option('_wooaddtocart_settings_button_radius_size', '');
         $fontSize           = get_option('_wooaddtocart_settings_button_font_size', '');
         $buttonType         = get_option('_wooaddtocart_settings_button_type', 'none');
-        $buttonIcon         = get_option('_wooaddtocart_settings_button_icon', '');
+        $buttonIcon         = get_option('_wooaddtocart_settings_button_icon', 'wooaddtocart-shopping-cart');
         $buttonIconPosition = get_option('_wooaddtocart_settings_button_icon_position', 'before');
         ?>
         <style type='text/css'>
@@ -43,7 +43,7 @@ class Customization
                <?php  echo $textColor ? ("color: $textColor !important;") : ''; ?>
             }
 
-            <?php if($buttonIcon): ?>
+            <?php if ($buttonIcon): ?>
                 .wooaddtocart-cart-arrow-down:<?php echo $buttonIconPosition;?> {
                     content: "\61";
                 }
