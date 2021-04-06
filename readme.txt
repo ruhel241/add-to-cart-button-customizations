@@ -1,17 +1,20 @@
-=== Add To Cart Button Customizations ===
+=== WooCommerce Add To Cart Button Customizations ===
 Contributors: ruhel241
-Tags: hide add to cart button, woocommerce hide price, add to cart button custom text, woocommerce, add to cart.
+Tags: hide add to cart button, woocommerce hide price, add to cart, woocommerce, add to cart.
 Requires at least: 4.5
 Requires PHP: 5.4 or greater
 Tested up to: 5.7
-Stable tag: 1.0.0
+Stable tag: 1.2.0 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Description ==
 
-Add to cart button customization for woocommerce, button color, button font size, button radius And added button icon etc.  Hide add to cart button on single product, woocommerce price hide on single product, Add to cart button text change in single product and global settings add to cart Button hide on shop page, single page or Global page. Add Icon on add to cart button.
+Add to cart button customization for woocommerce, button color, button font size, button radius, and added button icon, etc.
+Hide add to cart button on a single product, Hide add to cart button on the shop page, woocommerce price hide on single product and shop page.
+Add to cart button text change in single product and shop page. There are Global Settings options you can set add to cart button hide on the shop page, single page, or global page.
+You can set add an icon on add to cart button text before or after.
 
 
 ### Hide Add to Cart Button Woocommerce
@@ -24,7 +27,7 @@ Hide price for specific product.
 Button background color, Button text color, Button border color, Button hover color,
 Button border size, Button border Radius, Button text font size, Button type, Button Icon, Button position.
 
-### Add To Cart Button Custom Settings
+### Add To Cart Button Custom Settings0
 Admin can hide "Add to Cart Button" Global Page, Shop Page or Single page.
 
 ### Change The "Add to Cart Button" Text
@@ -94,11 +97,16 @@ Yes, you can set icon position left or right.
 6. Hide "Add to cart" button on Shop Products
 7. Hide "Add to cart" button on Single Product.
 8. Hide Price & Hide Button.
-9. Button Hide Settings
-10. Add to cart button color customization
+9. Admin Product Page.
+10. Button Hide Settings
+11. Add to cart button color customization
 
 
 == Changelog ==
+
+= 1.2.0 =
+
+* Updated readme and Added Screenshot.
 
 = 1.0.0 =
 
