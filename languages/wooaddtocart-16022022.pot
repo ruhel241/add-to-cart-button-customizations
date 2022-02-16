@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Add To Cart Button Customizations\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-16 09:46+0000\n"
+"POT-Creation-Date: 2021-04-06 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.5.5; wp-5.9\n"
+"X-Loco-Version: 2.5.0; wp-5.6.2\n"
 "X-Domain: wooaddtocart"
 
 #: Classes/WooAddToCartSettings.php:195
@@ -25,7 +25,7 @@ msgid "Add To Cart Button Customization"
 msgstr ""
 
 #: Classes/ProductSettings.php:12
-msgid "Add To Cart Button Customization Lite"
+msgid "Add To Cart Customization Lite"
 msgstr ""
 
 #: Classes/WooAddToCartSettings.php:23
@@ -118,12 +118,6 @@ msgstr ""
 
 #: Classes/ProductSettings.php:61
 msgid "Check me to hide price"
-msgstr ""
-
-#: wooaddtocart.php:54
-msgid ""
-"Congratulations! you have installed \"Add To Cart Button Customizations\" "
-"for WooCommerce plugin, Please rating this plugin."
 msgstr ""
 
 #: Classes/WooAddToCartSettings.php:146

@@ -9,7 +9,7 @@ class ProductSettings
     */ 
     public static function registerProductDataTab($product_data_tabs)
     {
-        $menuName = esc_html__('Add To Cart Customization Lite', 'wooaddtocart');
+        $menuName = esc_html__('Add To Cart Button Customization Lite', 'wooaddtocart');
         
         $product_data_tabs['_wooaddtocart'] = array(
             'label'  => $menuName,

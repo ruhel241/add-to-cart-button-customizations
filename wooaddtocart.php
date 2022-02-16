@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Add To Cart Button Customizations
 Description: The Best Add To Cart Customizations Plugin for Woocommerce.
-Version: 1.2.0
+Version: 1.3.0
 Author: Md.Ruhel Khan
 Author URI: https://github.com/ruhel241
 Plugin URI: https://github.com/ruhel241/add-to-cart-customizations
@@ -31,7 +31,7 @@ class WooAddToCartCustomizationsLite
         include_once 'load.php';
         define("WOOADDTOCART_PLUGIN_DIR_URL", plugin_dir_url(__FILE__));
         define("WOOADDTOCART_PLUGIN_DIR_PATH", plugin_dir_path(__FILE__));
-        define("WOOADDTOCART_PLUGIN_DIR_VERSION", '1.2.0');
+        define("WOOADDTOCART_PLUGIN_DIR_VERSION", '1.3.0');
     }
 
     public function adminHooks()
@@ -40,7 +40,24 @@ class WooAddToCartCustomizationsLite
         add_action('woocommerce_product_data_panels', array('WooAddToCart\Classes\ProductSettings', 'createDataFields'));
         add_action('woocommerce_process_product_meta', array('WooAddToCart\Classes\ProductSettings', 'saveDataFields'));
         add_filter( 'woocommerce_get_settings_pages', array('WooAddToCart\Classes\Customization', 'wooAddToCartAddSettings'), 15, 1 );
+        add_action( 'admin_notices', [$this, 'adminNotice'] );
     }
+
+    public function adminNotice() {
+		//get the current screen
+		$screen = get_current_screen();
+		
+		if ( $screen->id == 'dashboard' ||  $screen->id == 'plugins' ) {
+			?>
+				<div class="notice notice-success is-dismissible">
+					<p>
+						<?php _e('Congratulations! you have installed "Add To Cart Button Customizations" for WooCommerce plugin, Please rating this plugin.', 'wooaddtocart'); ?>
+						<em><a href="https://wordpress.org/support/plugin/add-to-cart-button-customizations/reviews/#new-post" target="_blank">Rating</a></em>
+					</p>
+				</div>
+			<?php
+		}
+	}
 
     public function publicHooks()
     {
