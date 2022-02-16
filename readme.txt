@@ -3,7 +3,7 @@ Contributors: ruhel241
 Tags: hide add to cart button, woocommerce hide price, add to cart, woocommerce, add to cart.
 Requires at least: 4.5
 Requires PHP: 5.4 or greater
-Tested up to: 5.7
+Tested up to: 5.9
 Stable tag: 1.3.0 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

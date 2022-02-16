@@ -1,3 +1,0 @@
-# Add to cart button customization for woocommerce wordpress plugin
-Add To Cart Button text change, Button Customizations. Button Hide, Price Hide.
-button color, button font size, button radius And added button icon etc.  Hide add to cart button on single product, woocommerce price hide on single product, Add to cart button text change in single product and global settings add to cart Button hide on shop page, single page or Global page. Add Icon on add to cart button.
