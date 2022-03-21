@@ -41,7 +41,6 @@ class WooAddToCartCustomizationsLite
         add_action('woocommerce_process_product_meta', array('WooAddToCart\Classes\ProductSettings', 'saveDataFields'));
         add_filter( 'woocommerce_get_settings_pages', array('WooAddToCart\Classes\Customization', 'wooAddToCartAddSettings'), 15, 1 );
         add_action( 'admin_notices', [$this, 'adminNotice'] );
-        // add_action( 'admin_enqueue_scripts', [$this, 'adminEnqueueScript'] );
     }
 
     public function adminNotice() {
@@ -76,10 +75,6 @@ class WooAddToCartCustomizationsLite
             add_action('woocommerce_single_product_summary', array('WooAddToCart\Classes\FrontendHandler', 'hideSinglePrice'), 1);
         // Custom css load
             add_action('wp_head', array('WooAddToCart\Classes\Customization', 'customStyle')); 
-       
-        // forntend
-        add_action('wp', array('WooAddToCart\Classes\FrontendHandler', 'initWooAddToCart'));
-
     }
 
     public function loadTextDomain()
