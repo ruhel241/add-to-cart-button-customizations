@@ -1,0 +1,9 @@
+._wooaddtocart_inquire_us_button_field > ul {
+    display: flex !important;
+    width: 100% !important;
+    flex-flow: wrap !important;
+}
+
+._wooaddtocart_inquire_us_button_field li {
+    margin-right: 10px !important;
+}
