@@ -210,7 +210,7 @@ class WooAddToCartSettings extends WC_Settings_Page
                 )
 			) );
 		}
-	?>
+		?>
 
 		<script>
 			jQuery(document).ready(function($) {
