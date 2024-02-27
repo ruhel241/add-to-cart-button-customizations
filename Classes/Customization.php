@@ -27,18 +27,22 @@ class Customization
         $buttonIconPosition = get_option('_wooaddtocart_settings_button_icon_position', 'before');
         ?>
         <style type='text/css'>
- 
-            ul.products li.product .button, .single_add_to_cart_button {
+            button.wc-block-components-product-button__button.add_to_cart_button.wooaddtocart-custom-css, .wooaddtocart-custom-css  {
                 <?php  echo $bgColor ? ("background: $bgColor !important;") : '';?>
                 <?php  echo $textColor ? ("color: $textColor !important;") : '';?>
-                <?php  echo $buttonType ? ("border: $buttonType !important;") : '';?>
-                <?php  echo $borderColor ? ("border-color: $borderColor !important;") : '';?>
-                <?php  echo $borderSize ? ("border-width: $borderSize".'px !important;') : '';?>
+                <?php 
+                    if ($buttonType ) {
+                        echo "border-style: $buttonType !important;
+                        border-width: $borderSize"."px !important;
+                        border-color: $borderColor !important;";
+                    } 
+                ?>
                 <?php  echo $borderRadius ? ("border-radius: $borderRadius".'px !important;') : '';?>
                 <?php  echo $fontSize ? ("font-size: $fontSize".'px !important;') : ''; ?>
+                <?php  echo "transition: 0.3s"; ?>
             }
             
-            ul.products li.product .button:hover, .single_add_to_cart_button:hover {
+            button.wc-block-components-product-button__button.add_to_cart_button.wooaddtocart-custom-css:hover, .wooaddtocart-custom-css:hover {
                <?php  echo $hoverColor ? ("background: $hoverColor !important;") : ''; ?>
                <?php  echo $textColor ? ("color: $textColor !important;") : ''; ?>
             }
@@ -77,13 +81,12 @@ class Customization
             <?php endif; ?>
         </style>
 
-        <?php if ($buttonIcon): ?>
+        <?php if ($buttonIcon) : ?>
             <script>
                 jQuery(document).ready(function($) {
-                    $('.add_to_cart_button, .single_add_to_cart_button').addClass('<?php echo $buttonIcon; ?>');
+                    $('.add_to_cart_button, .single_add_to_cart_button, .wc-block-components-product-button__button').addClass('<?php echo $buttonIcon; ?> wooaddtocart-custom-css');
                 })
             </script>
         <?php endif;
     }
-
 }

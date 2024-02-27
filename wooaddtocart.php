@@ -2,7 +2,7 @@
 /*
 Plugin Name: Add To Cart Button Customizations
 Description: The Best Add To Cart Customizations Plugin for Woocommerce.
-Version: 1.3.1
+Version: 2.0.0
 Author: wpcreativeidea
 Author URI: https://wpcreativeidea.com/home
 Plugin URI: https://wpcreativeidea.com/add-to-cart-button
@@ -31,7 +31,7 @@ class WooAddToCartCustomizationsLite
         include_once 'load.php';
         define("WOOADDTOCART_PLUGIN_DIR_URL", plugin_dir_url(__FILE__));
         define("WOOADDTOCART_PLUGIN_DIR_PATH", plugin_dir_path(__FILE__));
-        define("WOOADDTOCART_PLUGIN_DIR_VERSION", '1.3.1');
+        define("WOOADDTOCART_PLUGIN_DIR_VERSION", '2.0.0');
     }
 
     public function adminHooks()

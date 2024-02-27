@@ -70,7 +70,7 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'desc'     => __( 'Button Background Color', 'wooaddtocart' ),
 					'desc_tip' => true,
 					'id'       => '_wooaddtocart_settings_button_bg_color',
-					'css'      => 'width:80px;',
+					'css'      => 'width:165px',
 					'default'  => '#735dee',
 				),
 	
@@ -80,39 +80,18 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'desc'     => __( 'Text Font Color', 'wooaddtocart'),
 					'desc_tip' => true,
 					'id'	   => '_wooaddtocart_settings_button_text_color',
-					'css'      => 'width:80px',
+					'css'      => 'width:165px',
 					'default'  => '#ffffff',
 				),
-
-				array(
-					'name'     => __( 'Border Color', 'wooaddtocart' ),
-					'type'     => 'color',
-					'desc'     => __( 'Border Color', 'wooaddtocart'),
-					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_settings_button_border_color',
-					'css'      => 'width:80px',
-					'default'  => '#cfc6f5',
-				),
-
 				array(
 					'name'     => __( 'Hover Color', 'wooaddtocart' ),
 					'type'     => 'color',
 					'desc'     => __( 'Hover Color', 'wooaddtocart'),
 					'desc_tip' => true,
 					'id'	   => '_wooaddtocart_settings_button_hover_color',
-					'css'      => 'width:80px',
+					'css'      => 'width:165px',
 					'default'  => '#4c4747',
 				),
-
-				array(
-					'name'     => __( 'Border Size', 'wooaddtocart' ),
-					'type'     => 'number',
-					'desc'     => __( 'Border Size', 'wooaddtocart'),
-					'desc_tip' => true,
-					'id'	   => '_wooaddtocart_settings_button_border_size',
-					'css'      => 'width:200px',
-				),
-
 				array(
 					'name'     => __( 'Button Radius', 'wooaddtocart' ),
 					'type'     => 'number',
@@ -121,7 +100,6 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'id'	   => '_wooaddtocart_settings_button_radius_size',
 					'css'      => 'width:200px',
 				),
-
 				array(
 					'name'     => __( 'Text Font Size', 'wooaddtocart' ),
 					'type'     => 'number',
@@ -130,7 +108,6 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'id'	   => '_wooaddtocart_settings_button_font_size',
 					'css'      => 'width:200px',
 				),
-				
 				array(
 					'name'     => __( 'Button Type', 'wooaddtocart' ),
 					'type'     => 'select',
@@ -139,12 +116,29 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'id'	   => '_wooaddtocart_settings_button_type',
 					'css'      => 'width:200px',
 					'options'  => array(
-						''   	 => __( 'None', 'wooaddtocart' ),
+						'none'   => __( 'None', 'wooaddtocart' ),
 						'solid'  => __( 'Solid', 'wooaddtocart' ),
                         'double' => __( 'Double', 'wooaddtocart' ),
 						'dotted' => __( 'Dotted', 'wooaddtocart' ),
 						'dashed' => __( 'Dashed', 'wooaddtocart' )
 					),
+				),
+				array(
+					'name'     => __( 'Border Width', 'wooaddtocart' ),
+					'type'     => 'number',
+					'desc'     => __( 'Border Width', 'wooaddtocart'),
+					'desc_tip' => true,
+					'id'	   => '_wooaddtocart_settings_button_border_size',
+					'css'      => 'width:200px',
+				),
+				array(
+					'name'     => __( 'Border Color', 'wooaddtocart' ),
+					'type'     => 'color',
+					'desc'     => __( 'Border Color', 'wooaddtocart'),
+					'desc_tip' => true,
+					'id'	   => '_wooaddtocart_settings_button_border_color',
+					'css'      => 'width:165px',
+					'default'  => '#cfc6f5',
 				),
 
 				array(
@@ -216,6 +210,32 @@ class WooAddToCartSettings extends WC_Settings_Page
                 )
 			) );
 		}
+	?>
+
+		<script>
+			jQuery(document).ready(function($) {
+				const buttonType  =  $("#_wooaddtocart_settings_button_type");
+				const buttonWidth =  $('#_wooaddtocart_settings_button_border_size');
+				const buttonColor =  $('#_wooaddtocart_settings_button_border_color');
+
+				if ( buttonType.val() == 'none') {
+					$(buttonWidth).closest('tr').hide();
+					$(buttonColor).closest('tr').hide();
+				}
+				
+				$(buttonType).change(function(){
+					if ($(this).val() != 'none') {
+						$(buttonWidth).closest('tr').fadeIn();
+						$(buttonColor).closest('tr').fadeIn();
+					} else {
+						$(buttonWidth).closest('tr').fadeOut();
+						$(buttonColor).closest('tr').fadeOut();
+					}
+				})
+			})
+		</script>
+		
+		<?php
 
 		return apply_filters( 'woocommerce_get_settings_' . $this->id, $settings, $current_section );
 	}

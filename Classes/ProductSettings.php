@@ -96,8 +96,5 @@ class ProductSettings
         } else {
             update_post_meta($post_id, '_wooaddtocart_product_hide_price', 'no');
         }
-
     }
-    
 }
-

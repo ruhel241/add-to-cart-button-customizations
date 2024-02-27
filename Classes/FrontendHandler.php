@@ -17,6 +17,13 @@ class FrontendHandler
             if ($remove_cart_button == 'yes') {
                 if (is_product()) {
                     remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+                    ?>
+                    <style>
+                        .wc-block-add-to-cart-form {
+                            display: none;
+                        }
+                        </style>
+                    <?php
                 }
             }
         }
@@ -115,5 +122,4 @@ class FrontendHandler
 
         return $price;
     }
-
 }
