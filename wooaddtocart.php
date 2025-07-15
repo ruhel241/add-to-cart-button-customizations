@@ -2,7 +2,7 @@
 /*
 Plugin Name: Add To Cart Button Customizations
 Description: The Best Add To Cart Customizations Plugin for Woocommerce.
-Version: 2.0.0
+Version: 2.0.1
 Author: wpcreativeidea
 Author URI: https://wpcreativeidea.com/home
 Plugin URI: https://wpcreativeidea.com/add-to-cart-button
@@ -21,7 +21,6 @@ class WooAddToCartCustomizationsLite
         if (is_admin()) {
             $this->adminHooks();
         }
-        $this->loadTextDomain();
         $this->publicHooks();
         $this->loadDependecies();
    }
@@ -31,7 +30,7 @@ class WooAddToCartCustomizationsLite
         include_once 'load.php';
         define("WOOADDTOCART_PLUGIN_DIR_URL", plugin_dir_url(__FILE__));
         define("WOOADDTOCART_PLUGIN_DIR_PATH", plugin_dir_path(__FILE__));
-        define("WOOADDTOCART_PLUGIN_DIR_VERSION", '2.0.0');
+        define("WOOADDTOCART_PLUGIN_DIR_VERSION", '2.0.1');
     }
 
     public function adminHooks()
@@ -67,19 +66,14 @@ class WooAddToCartCustomizationsLite
             add_filter( 'woocommerce_product_add_to_cart_text', array('WooAddToCart\Classes\FrontendHandler', 'customTextAddToCartShop'), 30, 1);
         // Custom Text add to cart button on Single page
             add_filter( 'woocommerce_product_single_add_to_cart_text', array('WooAddToCart\Classes\FrontendHandler', 'customTextAddToCartSingle'), 30, 1);
-        // remove cart button single page
-            add_action('woocommerce_single_product_summary', array('WooAddToCart\Classes\FrontendHandler', 'removeSingleCartButton'), 1);
+            // remove cart button single page
+            add_action('woocommerce_before_single_product', array('WooAddToCart\Classes\FrontendHandler', 'removeSingleCartButton'), 1);
         // shop Hide Price
             add_filter('woocommerce_get_price_html', array('WooAddToCart\Classes\FrontendHandler', 'hideShopPrice'), 10, 2);
         // Single hide price
-            add_action('woocommerce_single_product_summary', array('WooAddToCart\Classes\FrontendHandler', 'hideSinglePrice'), 1);
+            add_action('woocommerce_before_single_product', array('WooAddToCart\Classes\FrontendHandler', 'hideSinglePrice'), 5);
         // Custom css load
-            add_action('wp_head', array('WooAddToCart\Classes\Customization', 'customStyle')); 
-    }
-
-    public function loadTextDomain()
-    {
-        load_plugin_textdomain('wooaddtocart', false, basename(dirname(__FILE__)) . '/languages');
+        add_action('wp_enqueue_scripts', array('WooAddToCart\Classes\Customization', 'customStyle'));
     }
 
 }

@@ -4,7 +4,7 @@ Tags: hide add to cart button, woocommerce hide price, add to cart, woocommerce,
 Requires at least: 5.0
 Requires PHP: 5.2.4
 Tested up to: 6.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,6 +101,9 @@ Yes, you can set icon position left or right.
 11. Add to cart button color customization
 
 == Changelog ==
+
+= 2.0.1 (DATE: July 16, 2025) =
+* Bug Fix and Compatible WordPress latest version 6.8
 
 = 2.0.0 =
 * Bug Fix and Compatible version WordPress 6.4.3

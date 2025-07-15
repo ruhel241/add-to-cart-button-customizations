@@ -187,7 +187,7 @@ class WooAddToCartSettings extends WC_Settings_Page
 			
 				array(
 					'name'     => __( 'Add To Cart Button Custom Settings', 'wooaddtocart' ),
-					'desc'     => 'If the "Add To Cart" Button is hidden in the single product then it\'s working.',
+					'desc'     => "If the 'Add to Cart' button is hidden on the single product page, then it's working correctly.",
 					'type'     => 'title',
                     'id'       => '_wooaddtocart_button_custom_settings_title'
                 ),
