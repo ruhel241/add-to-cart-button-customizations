@@ -8,30 +8,58 @@ Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add to cart button customization for woocommerce, button color, button font size, button radius, and added button icon, etc.
+Add To Cart Button Customizations is a powerful WooCommerce extension that gives you complete control over your WooCommerce add to cart buttons.
 
 == Description ==
 
-Hide add to cart button on a single product, Hide add to cart button on the shop page, woocommerce price hide on single product and shop page.
-Add to cart button text change in single product and shop page. There are Global Settings options you can set add to cart button hide on the shop page, single page, or global page.
-You can set add an icon on add to cart button text before or after.
+Add To Cart Button Customizations is a powerful WooCommerce extension that gives you complete control over your WooCommerce add to cart buttons. This plugin allows you to customize the appearance and behavior of add to cart buttons throughout your online store without any coding knowledge.
+Whether you want to change button colors to match your brand, hide buttons on specific products, add icons, or customize button text, this plugin provides all the tools you need to create a seamless shopping experience.
 
+## Features
 
-### Hide Add to Cart Button Woocommerce
-Hide add to cart button specific product.
+### Button Styling
+- Change button background color
+- Customize text color
+- Set border color and size
+- Create hover effects
+- Adjust button radius for rounded corners
+- Modify font size
 
-### Woocommerce Hide Price.
-Hide price for specific product.
+### Button Visibility
+- Hide add to cart buttons globally
+- Hide buttons on shop/archive pages only
+- Hide buttons on single product pages only
+- Hide buttons for specific products
 
-### Add to cart Button Color customization.
-Button background color, Button text color, Button border color, Button hover color,
-Button border size, Button border Radius, Button text font size, Button type, Button Icon, Button position.
+### Price Display
+- Hide prices globally
+- Hide prices on specific products
+- Hide prices on shop/archive pages
 
-### Add To Cart Button Custom Settings0
-Admin can hide "Add to Cart Button" Global Page, Shop Page or Single page.
+### Button Text
+- Change the default "Add to Cart" text globally
+- Set custom text for specific products
+- Add icons before or after text
 
-### Change The "Add to Cart Button" Text
-Admin can change add to cart button text change.
+### Icon Integration
+- Add icons to your add to cart buttons
+- Control icon positioning (left or right)
+- Choose from available icon sets
+
+## Configuration
+
+### Global Settings
+1. Navigate to **WooCommerce Settings → Add To Cart Customization Settings**
+2. The settings page is divided into tabs:
+   - Button Hide Settings
+   - Button Customization
+
+### Per-Product Settings
+1. Edit any product
+3. Enable or disable specific options:
+   - Hide add to cart button
+   - Hide price
+   - Custom button text
 
 
 == Installation ==
