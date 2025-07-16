@@ -90,7 +90,7 @@ class Customization
                 'wooaddtocart-script', 
                 WOOADDTOCART_PLUGIN_DIR_URL . 'src/public/js/wooaddtocart-script.js', 
                 array('jquery'), 
-                WOOADDTOCART_PLUGIN_DIR_VERSION, 
+                WOOADDTOCART_PLUGIN_VERSION, 
                 true
             );
             
