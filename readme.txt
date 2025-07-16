@@ -8,9 +8,10 @@ Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+Add to cart button customization for woocommerce, button color, button font size, button radius, and added button icon, etc.
+
 == Description ==
 
-Add to cart button customization for woocommerce, button color, button font size, button radius, and added button icon, etc.
 Hide add to cart button on a single product, Hide add to cart button on the shop page, woocommerce price hide on single product and shop page.
 Add to cart button text change in single product and shop page. There are Global Settings options you can set add to cart button hide on the shop page, single page, or global page.
 You can set add an icon on add to cart button text before or after.
