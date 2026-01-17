@@ -53,6 +53,7 @@ class WooAddToCartSettings extends WC_Settings_Page
 	 */
 	public function get_settings( $current_section = '' ) 
 	{
+		
 		if ( 'button_customization' == $current_section ) {
 
 			$settings = apply_filters('wooaddtocart_cart_button_customization_data', array(
@@ -109,6 +110,38 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'css'      => 'width:200px',
 				),
 				array(
+					'name'     => __( 'Padding Top', 'wooaddtocart' ),
+					'type'     => 'number',
+					'desc'     => __( 'Padding Top', 'wooaddtocart'),
+					'desc_tip' => true,
+					'id'	   => 'wooaddtocart_settings_button_padding_top',
+					'css'      => 'width:200px',
+				),
+				array(
+					'name'     => __( 'Padding Bottom', 'wooaddtocart' ),
+					'type'     => 'number',
+					'desc'     => __( 'Padding Bottom', 'wooaddtocart'),
+					'desc_tip' => true,
+					'id'	   => 'wooaddtocart_settings_button_padding_bottom',
+					'css'      => 'width:200px',
+				),
+				array(
+					'name'     => __( 'Padding Right', 'wooaddtocart' ),
+					'type'     => 'number',
+					'desc'     => __( 'Padding Right', 'wooaddtocart'),
+					'desc_tip' => true,
+					'id'	   => 'wooaddtocart_settings_button_padding_right',
+					'css'      => 'width:200px',
+				),
+				array(
+					'name'     => __( 'Padding Left', 'wooaddtocart' ),
+					'type'     => 'number',
+					'desc'     => __( 'Padding Left', 'wooaddtocart'),
+					'desc_tip' => true,
+					'id'	   => 'wooaddtocart_settings_button_padding_left',
+					'css'      => 'width:200px',
+				),
+				array(
 					'name'     => __( 'Button Type', 'wooaddtocart' ),
 					'type'     => 'select',
 					'desc'     => __( 'Button Type', 'wooaddtocart'),
@@ -150,7 +183,7 @@ class WooAddToCartSettings extends WC_Settings_Page
 					'css'      => 'width:200px',
 					'default'  => 'wooaddtocart-shopping-cart',
 					'options'  => array(
-						''  => __( 'None', 'wooaddtocart' ),
+						'none'  					    => __( 'None', 'wooaddtocart' ),
 						'wooaddtocart-cart-arrow-down'  => __( 'Cart Arrow Down', 'wooaddtocart' ),
                         'wooaddtocart-cart-plus'    	=> __( 'Cart Plus', 'wooaddtocart' ),
 						'wooaddtocart-bag'  			=> __( 'Bag', 'wooaddtocart' ),
@@ -217,12 +250,14 @@ class WooAddToCartSettings extends WC_Settings_Page
 				const buttonType  =  $("#_wooaddtocart_settings_button_type");
 				const buttonWidth =  $('#_wooaddtocart_settings_button_border_size');
 				const buttonColor =  $('#_wooaddtocart_settings_button_border_color');
+				const buttonIcon  =  $("#_wooaddtocart_settings_button_icon");
+				const buttonIconPosition  =  $("#_wooaddtocart_settings_button_icon_position");
 
+				// button type
 				if ( buttonType.val() == 'none') {
 					$(buttonWidth).closest('tr').hide();
 					$(buttonColor).closest('tr').hide();
 				}
-				
 				$(buttonType).change(function(){
 					if ($(this).val() != 'none') {
 						$(buttonWidth).closest('tr').fadeIn();
@@ -230,6 +265,18 @@ class WooAddToCartSettings extends WC_Settings_Page
 					} else {
 						$(buttonWidth).closest('tr').fadeOut();
 						$(buttonColor).closest('tr').fadeOut();
+					}
+				})
+
+				// button Icon
+				if (buttonIcon.val() == 'none') {
+					$(buttonIconPosition).closest('tr').hide();
+				}
+				$(buttonIcon).change(function(){
+					if ($(this).val() != 'none') {
+						$(buttonIconPosition).closest('tr').fadeIn();
+					} else {
+						$(buttonIconPosition).closest('tr').fadeOut();
 					}
 				})
 			})
